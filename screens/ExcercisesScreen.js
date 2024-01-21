@@ -1,11 +1,13 @@
 import { View, Text } from 'react-native';
+import SearchBar from '../components/SearchBar';
 
 const ExcercisesScreen = () => {
     return (
         <View
-            style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+            style={{ flex: 1 }}
         >
-            <Text>Excercises Screen</Text>
+            <SearchBar />
+
         </View>
     );
 };

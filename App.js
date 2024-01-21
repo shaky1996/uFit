@@ -6,6 +6,7 @@ import NavigationApp from './components/NavigationApp';
 const App = () => {
     return (
         <NavigationContainer>
+            <StatusBar style='light' />
             <NavigationApp />
         </NavigationContainer>
     );

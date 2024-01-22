@@ -56,6 +56,8 @@ const SearchBar = () => {
                             </Text>
                         </TouchableOpacity>
                     )}
+                    keyExtractor={item => item}
+                    contentContainerStyle={{ columnGap: 6 }}
                 />
             </View>
         </View>
@@ -102,7 +104,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         borderWidth: 1,
         backgroundColor: activeJobType === item ? '#daff6a' : '#000000',
-        margin: 3
+        margin: 0
     })
 });
 

@@ -4,7 +4,7 @@ import ExerciseList from '../components/ExerciseList';
 
 const ExcercisesScreen = () => {
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: 'white' }}>
             <SearchBar />
             <ExerciseList />
         </View>

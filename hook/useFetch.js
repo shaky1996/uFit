@@ -13,7 +13,8 @@ const useFetch = () => {
         url: 'https://exercisedb.p.rapidapi.com/exercises',
         params: { limit: '50' },
         headers: {
-            'X-RapidAPI-Key': rapidApiKey,
+            'X-RapidAPI-Key':
+                'c9cc6e7562msh41c9bae593c588ep183cf6jsn6e04fb87dd9f',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
@@ -23,8 +24,9 @@ const useFetch = () => {
 
         try {
             const response = await axios.request(options);
+            console.log('API Response: ', response);
 
-            setData(response.data.data);
+            setData(response.data);
             setIsLoading(false);
         } catch (error) {
             setError(error);

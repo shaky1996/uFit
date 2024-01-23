@@ -74,13 +74,14 @@ const styles = StyleSheet.create({
     },
     searchWrapper: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#d3d3d3',
         marginRight: 15,
         marginLeft: 15,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 16,
-        height: '100%'
+        height: '100%',
+
     },
     searchInput: {
         width: '100%',

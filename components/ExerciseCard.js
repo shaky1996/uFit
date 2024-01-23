@@ -1,18 +1,31 @@
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import React from 'react';
+import { useState } from 'react';
+import ExerciseModal from './ExerciseModal';
 
 const ExerciseCard = ({ item, selectedExercise, handleCardPress }) => {
+    const [modalVisible, setModalVisible] = useState(false);
+
+    const openModal = () => {
+        setModalVisible(true);
+    };
+
+    const closeModal = () => {
+        setModalVisible(false);
+    };
     return (
         <TouchableOpacity
             style={styles.container(selectedExercise, item)}
-            onPress={() => handleCardPress(item)}
+            onPress={() => openModal(item)}
         >
             <View style={styles.contentContainer}>
                 <TouchableOpacity
                     style={styles.logoContainer(selectedExercise, item)}
+                    onPress={openModal}
                 >
                     <Image
-                        source={{ uri: item.gifUrl }}
+                        source={{
+                            uri: item.gifUrl
+                        }}
                         resizeMode='contain'
                         style={styles.logoImage}
                     />
@@ -28,6 +41,13 @@ const ExerciseCard = ({ item, selectedExercise, handleCardPress }) => {
                     </Text>
                 </View>
             </View>
+            <ExerciseModal
+                visible={modalVisible}
+                closeModal={closeModal}
+                gifUrl={item.gifUrl}
+                exerciseName={item.name}
+                instructions={item.instructions}
+            />
         </TouchableOpacity>
     );
 };

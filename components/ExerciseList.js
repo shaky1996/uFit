@@ -7,12 +7,11 @@ import {
     StyleSheet
 } from 'react-native';
 import { useState } from 'react';
-import ExerciseCard from './ExerciseCard';
 import useFetch from '../hook/useFetch';
-import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
+import ExerciseCard from './ExerciseCard';
+import ExerciseModal from './ExerciseModal';
 
 const ExerciseList = () => {
-    const tabBarHeight = useBottomTabBarHeight();
     const { data, isLoading, error } = useFetch();
     console.log(data);
 
@@ -24,14 +23,16 @@ const ExerciseList = () => {
                 ) : error ? (
                     <Text>Something went wrong :/</Text>
                 ) : (
-
                     <FlatList
                         data={Object.values(data)}
-                        renderItem={({ item }) => <ExerciseCard item={item} />}
+                        renderItem={({ item }) => (
+                            <ExerciseCard
+                                item={item}
+                            />
+                        )}
                         keyExtractor={(item) => item?.id}
-                        contentContainerStyle={{ rowGap: 5, paddingBottom: 40 }}
+                        contentContainerStyle={{ rowGap: 5, paddingBottom: 0 }}
                     />
-                    
                 )}
             </View>
         </View>
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     },
     cardsContainer: {
         marginTop: 16
-    },
+    }
 });
 
 export default ExerciseList;

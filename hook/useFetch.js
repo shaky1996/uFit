@@ -26,7 +26,20 @@ const useFetch = () => {
             const response = await axios.request(options);
             console.log('API Response: ', response);
 
-            setData(response.data);
+            const allowedBodyParts = [
+                'upper arms',
+                'lower arms',
+                'back',
+                'chest',
+                'upper legs',
+                'lower legs',
+                'cardio'
+            ];
+            const filteredData = response.data.filter((item) =>
+                allowedBodyParts.includes(item.bodyPart)
+            );
+
+            setData(filteredData);
             setIsLoading(false);
         } catch (error) {
             setError(error);

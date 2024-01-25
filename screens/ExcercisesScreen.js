@@ -1,12 +1,22 @@
 import { View, Text, ScrollView } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import ExerciseList from '../components/ExerciseList';
+import { useState } from 'react';
+import { exercisesData } from '../constants/exercisesData';
 
 const ExcercisesScreen = () => {
+
+    const [searchResults, setSearchResults] = useState(exercisesData);
+
+    const handleSearch = (results) => {
+        setSearchResults(results);
+    };
+
+
     return (
         <View style={{ flex: 1, backgroundColor: 'white' }}>
-            <SearchBar />
-            <ExerciseList />
+            <SearchBar exercisesData={exercisesData} onSearch={handleSearch} />
+            <ExerciseList data={searchResults} />
         </View>
     );
 };

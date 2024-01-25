@@ -7,25 +7,62 @@ import {
     FlatList
 } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const excerciseTypes = ['Arms', 'Back', 'Chest', 'Legs', 'Cardio'];
+const exerciseTypes = ['Arms', 'Back', 'Chest', 'Legs', 'Cardio', 'Waist'];
 
-const SearchBar = () => {
-    const [activeExcerciseType, setActiveExcerciseType] = useState();
+const SearchBar = ({ exercisesData, onSearch }) => {
+    const [search, setSearch] = useState('');
+    const [activeExerciseType, setActiveExerciseType] = useState();
+
+    const handleSearch = () => {
+        let filteredResults = exercisesData;
+
+        if (activeExerciseType) {
+            // Filter results based on the selected body part
+            filteredResults = exercisesData.filter((exercise) => exercise.bodyPart.toLowerCase() === activeExerciseType.toLowerCase());
+        }
+
+        // Further filter based on search text
+        filteredResults = filteredResults.filter((exercise) =>
+            exercise.name.toLowerCase().includes(search.toLowerCase())
+        );
+
+        onSearch(filteredResults);
+    };
+
+    const handleFilterPress = (item) => {
+        if (item === activeExerciseType) {
+            // Clicking on the same filter button again, reset the filter
+            setActiveExerciseType(null);
+        } else {
+            setActiveExerciseType(item);
+        }
+    };
+
+    useEffect(() => {
+        handleSearch();
+    }, [activeExerciseType, search]);
+
 
     return (
         <View>
             <View style={styles.searchContainer}>
                 <View style={styles.searchWrapper}>
                     <TextInput
-                        value=''
-                        onChange={() => {}}
-                        placeholder='Search excercise'
+                        value={search}
+                        onChangeText={(text) => {
+                            setSearch(text);
+                            handleSearch(text || exercisesData); 
+                        }}
+                        onEndEditing={handleSearch}
+                        placeholder='Search exercise'
                         style={styles.searchInput}
+                        clearButtonMode='always'
+                        autoCapitalize='none'
                     />
                 </View>
-                <TouchableOpacity onPress={() => {}}>
+                <TouchableOpacity onPress={handleSearch}>
                     <FontAwesome5
                         name='search'
                         size={32}
@@ -35,19 +72,17 @@ const SearchBar = () => {
             </View>
             <View style={styles.tabsContainer}>
                 <FlatList
-                    data={excerciseTypes}
+                    data={exerciseTypes}
                     horizontal
                     renderItem={({ item }) => (
                         <TouchableOpacity
-                            style={styles.tab(activeExcerciseType, item)}
-                            onPress={() => {
-                                setActiveExcerciseType(item);
-                            }}
+                            style={styles.tab(activeExerciseType, item)}
+                            onPress={() => handleFilterPress(item)}
                         >
                             <Text
                                 style={{
                                     color:
-                                        activeExcerciseType === item
+                                        activeExerciseType === item
                                             ? '#000000'
                                             : '#FFFFFF'
                                 }}
@@ -56,8 +91,8 @@ const SearchBar = () => {
                             </Text>
                         </TouchableOpacity>
                     )}
-                    keyExtractor={item => item}
-                    contentContainerStyle={{ columnGap: 6 }}
+                    keyExtractor={(item) => item}
+                    contentContainerStyle={{ columnGap: 2 }}
                 />
             </View>
         </View>
@@ -80,8 +115,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 16,
-        height: '100%',
-
+        height: '100%'
     },
     searchInput: {
         width: '100%',

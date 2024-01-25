@@ -23,8 +23,6 @@ const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, instructions
          {formattedInstructions && (
           <View style={styles.instructions}>{formattedInstructions}</View>
         )}
-
-          {/* <Text style={styles.instructions}>{instructions}</Text> */}
         </View>
       </View>
     </Modal>

@@ -24,11 +24,11 @@ const NavigationApp = () => {
             })}
         >
             <Tab.Screen
-                name='Excercises'
+                name='Exercises'
                 component={ExcercisesScreen}
                 options={{
-                    title: 'Excercise Library',
-                    headerTitle: 'EXCERCISE LIBRARY',
+                    title: 'Exercise Library',
+                    headerTitle: 'EXERCISE LIBRARY',
                     tabBarActiveTintColor: '#daff6a',
                     tabBarIcon: ({ color, size }) => (
                         <FontAwesome6

@@ -1,60 +1,92 @@
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-import { useState } from 'react';
-import { templateRoutines } from '../constants/templateRoutines';
+import { FontAwesome6 } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
+import { differenceInDays, format } from 'date-fns';
 import TemplateModal from './TemplateModal';
 
 const TemplateCard = ({ item }) => {
-    const [modalVisible, setModalVisible] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [lastClickedDate, setLastClickedDate] = useState(null);
 
-    const openModal = () => {
-        setModalVisible(true);
-    };
+  const openModal = () => {
+    setLastClickedDate(new Date());
+    setModalVisible(true);
+  };
 
-    const closeModal = () => {
-        setModalVisible(false);
-    };
+  const closeModal = () => {
+    setModalVisible(false);
+  };
 
-    return (
-        <View>
-            <TouchableOpacity
-                onPress={openModal}
+  const formatLastClickedDate = () => {
+    if (lastClickedDate) {
+      const daysDifference = differenceInDays(new Date(), lastClickedDate);
+
+      if (daysDifference === 0) {
+        return 'Last opened: Today';
+      } else if (daysDifference === 1) {
+        return 'Last opened: Yesterday';
+      } else {
+        return `Last opened: ${daysDifference} days ago`;
+      }
+    }
+    return null;
+  };
+
+  return (
+    <View>
+      <TouchableOpacity onPress={openModal}>
+        <Image style={{ width: '100%', height: 200 }} source={item.image} />
+        <LinearGradient
+          colors={['transparent', '#000000']}
+          style={{
+            width: '100%',
+            height: 200,
+            position: 'absolute',
+          }}
+          start={{ x: 0.5, y: 0 }}
+          end={{ x: 0.5, y: 1 }}
+        />
+        <Text
+          style={{
+            fontSize: 50,
+            color: '#daff6a',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            position: 'absolute',
+            bottom: 70,
+            width: '100%',
+          }}
+        >
+          {item.name}
+        </Text>
+        {lastClickedDate && (
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              position: 'absolute',
+              bottom: 50,
+              width: '100%',
+            }}
+          >
+            <FontAwesome6 name="clock" size={14} color="#dcdcdc" style={{ marginRight: 5 }} />
+            <Text
+              style={{
+                fontSize: 14,
+                color: '#dcdcdc',
+                textAlign: 'center',
+              }}
             >
-                <Image
-                    style={{ width: '100%', height: 200 }}
-                    source={item.image}
-                />
-                <LinearGradient
-                    colors={['transparent', '#000000']}
-                    style={{
-                        width: '100%',
-                        height: 200,
-                        position: 'absolute'
-                    }}
-                    start={{ x: 0.5, y: 0 }}
-                    end={{ x: 0.5, y: 1 }}
-                />
-                <Text
-                    style={{
-                        fontSize: 28,
-                        color: '#daff6a',
-                        fontWeight: 'bold',
-                        textAlign: 'center',
-                        position: 'absolute',
-                        bottom: 70,
-                        width: '100%'
-                    }}
-                >
-                    {item.name}
-                </Text>
-            </TouchableOpacity>
-            <TemplateModal
-                visible={modalVisible}
-                closeModal={closeModal}
-                routine={item}
-            />
-        </View>
-    );
+              {formatLastClickedDate()}
+            </Text>
+          </View>
+        )}
+      </TouchableOpacity>
+      <TemplateModal visible={modalVisible} closeModal={closeModal} routine={item} />
+    </View>
+  );
 };
 
 export default TemplateCard;

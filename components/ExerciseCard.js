@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { useState } from 'react';
 import ExerciseModal from './ExerciseModal';
 
-const ExerciseCard = ({ item, selectedExercise, handleCardPress }) => {
+const ExerciseCard = ({ item, selectedExercise }) => {
     const [modalVisible, setModalVisible] = useState(false);
 
     const openModal = () => {
@@ -46,6 +46,7 @@ const ExerciseCard = ({ item, selectedExercise, handleCardPress }) => {
                 closeModal={closeModal}
                 gifUrl={item.gifUrl}
                 exerciseName={item.name}
+                bodyPart={item.bodyPart}
                 instructions={item.instructions}
             />
         </TouchableOpacity>

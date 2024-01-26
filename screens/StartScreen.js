@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
+import TemplatesUserCreated from '../components/TemplatesUserCreated';
+import TemplateExamples from '../components/TemplateExamples';
 
 const StartScreen = () => {
     return (
+        <ScrollView>
         <View
-            style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+            style={{ flex: 1 }}
         >
-            <Text>Start Workout Screen</Text>
+        <TemplatesUserCreated />
         </View>
+        </ScrollView>
     );
 };
 

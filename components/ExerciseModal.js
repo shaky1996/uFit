@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Modal, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
 
-const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, instructions }) => {
+const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, bodyPart, instructions }) => {
     const formattedInstructions = instructions.map((instruction, index) => (
         <Text key={index} style={styles.instructionsText}>
          <Text style={styles.lineNumber}>{`${index + 1}.`}</Text> {instruction}
@@ -19,6 +19,7 @@ const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, instructions
         <FontAwesome6 name="circle-xmark" size={24} color="black" />
           </TouchableOpacity>
         <Text style={styles.modalExerciseName}>{exerciseName.toUpperCase()}</Text>
+        <Text style={styles.modalBodyPart}>{bodyPart}</Text>
           <Image source={{ uri: gifUrl }} style={styles.modalImage} resizeMode='contain' />
          {formattedInstructions && (
           <View style={styles.instructions}>{formattedInstructions}</View>
@@ -58,6 +59,11 @@ const styles = StyleSheet.create({
     color: 'black',
     marginTop: 40,
   },
+  modalBodyPart :{
+    marginTop: 10,
+    color: 'gray'
+  },
+
   closeButton: {
     position: 'absolute',
     top: 20,

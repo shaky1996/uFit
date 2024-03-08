@@ -1,12 +1,12 @@
 import {
     View,
-    Text,
-    TouchableOpacity,
     FlatList,
-    ActivityIndicator,
     StyleSheet
 } from 'react-native';
 import ExerciseCard from './ExerciseCard';
+
+// Provides full list of available workout instructions/cards
+
 
 const ExerciseList = ({ data }) => {
 

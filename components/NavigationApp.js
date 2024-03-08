@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View, Text } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
 import ProgressScreen from '../screens/ProgressScreen';
 import StartScreen from '../screens/StartScreen';
@@ -36,7 +35,13 @@ const NavigationApp = () => {
                             color={color}
                             size={size}
                         />
-                    )
+                    ),
+                    tabBarOnPress: ({ navigation }) => {
+                        // Reset the stack and navigate to ExercisesScreen
+                        navigation.navigate('Exercises', {
+                            screen: 'ExcercisesScreen'
+                        });
+                    }
                 }}
             />
             <Tab.Screen

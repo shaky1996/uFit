@@ -9,11 +9,13 @@ import {
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useState, useEffect } from 'react';
 
-const exerciseTypes = ['Arms', 'Back', 'Chest', 'Legs', 'Cardio', 'Waist'];
+//Search bar in exercise library screen. It lets users to filter through body parts or just find exercise by user's input
+
+const exerciseTypes = ['Arms', 'Back', 'Chest', 'Legs', 'Cardio', 'Waist']; 
 
 const SearchBar = ({ exercisesData, onSearch }) => {
     const [search, setSearch] = useState('');
-    const [activeExerciseType, setActiveExerciseType] = useState();
+    const [activeExerciseType, setActiveExerciseType] = useState(); // body parts filter
 
     const handleSearch = () => {
         let filteredResults = exercisesData;

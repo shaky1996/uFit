@@ -1,6 +1,6 @@
 import { View, Text, ScrollView } from 'react-native';
-import TemplatesUserCreated from '../components/TemplatesUserCreated';
-import TemplateExamples from '../components/TemplateExamples';
+import TemplatesExercise from '../components/workouts/TemplatesExercise';
+
 
 const StartScreen = () => {
     return (
@@ -8,7 +8,7 @@ const StartScreen = () => {
         <View
             style={{ flex: 1 }}
         >
-        <TemplatesUserCreated />
+        <TemplatesExercise />
         </View>
         </ScrollView>
     );

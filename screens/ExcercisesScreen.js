@@ -1,6 +1,6 @@
 import { View, Text, ScrollView } from 'react-native';
-import SearchBar from '../components/SearchBar';
-import ExerciseList from '../components/ExerciseList';
+import SearchBar from '../components/exercises/SearchBar';
+import ExerciseList from '../components/exercises/ExerciseList';
 import { useState } from 'react';
 import { exercisesData } from '../constants/exercisesData';
 

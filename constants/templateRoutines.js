@@ -6,43 +6,43 @@ export const templateRoutines = [
         exercises: [
             {
                 id: '10',
-                image: 'https://v2.exercisedb.io/image/OKFqoOqILulcgw',
+                image: require('../assets/exerciseGifs/OKFqoOqILulcgw.gif'),
                 name: 'Bench Press',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '11',
-                image: 'https://v2.exercisedb.io/image/poOgGNII3wUedG',
+                image: require('../assets/exerciseGifs/poOgGNII3wUedG.gif'),
                 name: 'Incline Bench Press',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '12',
-                image: 'https://v2.exercisedb.io/image/j25e9sJ06Yqto4',
+                image: require('../assets/exerciseGifs/j25e9sJ06Yqto4.gif'),
                 name: 'Triceps Dip',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '13',
-                image: 'https://fitnessprogramer.com/wp-content/uploads/2021/05/10301301-Lever-Pec-Deck-Fly_Chest_720.gif',
-                name: 'Pec Deck',
+                image: require('../assets/exerciseGifs/Wxuw5dEH4KCpgj.gif'),
+                name: 'Archer Push Up',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '14',
-                image: 'https://fitnessvolt.com/wp-content/uploads/2023/09/v-bar-tricep-pushdown.gif',
-                name: 'Tricep Pushdown',
+                image: require('../assets/exerciseGifs/FPHdW7N2UhHnkz.gif'),
+                name: 'Triceps Extension',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '15',
-                image: 'https://homeworkouts.org/wp-content/uploads/anim-dumbbell-lateral-raise.gif',
-                name: 'Lateral Raise',
+                image: require('../assets/exerciseGifs/m2Ib7xBR9B7Fui.gif'),
+                name: 'Front Lateral Raise',
                 sets: 3,
                 reps: 12
             }
@@ -55,43 +55,43 @@ export const templateRoutines = [
         exercises: [
             {
                 id: '20',
-                image: 'https://fitnessprogramer.com/wp-content/uploads/2021/04/Reverse-Lat-Pulldown.gif',
+                image: require('../assets/exerciseGifs/TjPH0fiA30s1qp.gif'),
                 name: 'Lat Pulldown',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '21',
-                image: 'https://v2.exercisedb.io/image/sfe3WonjUG9kdq',
+                image: require('../assets/exerciseGifs/sfe3WonjUG9kdq.gif'),
                 name: 'Bent Over Row',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '22',
-                image: 'https://fitnessvolt.com/wp-content/uploads/2023/09/v-bar-tricep-pushdown.gif',
-                name: 'Triceps Pushdown',
+                image: require('../assets/exerciseGifs/1ZSMZfbBocUU50.gif'),
+                name: 'Barbell Pullover',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '23',
-                image: 'https://v2.exercisedb.io/image/UrViGuMt2V1OSS',
+                image: require('../assets/exerciseGifs/UrViGuMt2V1OSS.gif'),
                 name: 'Incline Row',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '24',
-                image: 'https://v2.exercisedb.io/image/ENu7SjD2ctT1h-',
+                image: require('../assets/exerciseGifs/ENu7SjD2ctT1h-.gif'),
                 name: 'Reverse Fly',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '25',
-                image: 'https://v2.exercisedb.io/image/8fAw-bxWm6ePGY',
-                name: 'Incline Curl',
+                image: require('../assets/exerciseGifs/-aAtiw0IV9S71e.gif'),
+                name: 'Barbell Curl',
                 sets: 3,
                 reps: 12
             }
@@ -104,43 +104,43 @@ export const templateRoutines = [
         exercises: [
             {
                 id: '30',
-                image: 'https://www.inspireusafoundation.org/wp-content/uploads/2023/05/single-leg-leg-extension.gif',
-                name: 'Leg Extension',
+                image: require('../assets/exerciseGifs/NsojZDw2O6Rm75.gif'),
+                name: 'Deadlift',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '31',
-                image: 'https://v2.exercisedb.io/image/Hbzv4CcK8sGKJu',
-                name: 'Hack Squat',
+                image: require('../assets/exerciseGifs/MfbBcpgF62l1Su.gif'),
+                name: 'Barbell Squat',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '32',
-                image: 'https://www.bosshunting.com.au/cdn-cgi/imagedelivery/izM8XxyLg9MD6py1ribxJw/www.bosshunting.com.au/2022/09/Leg-Press.gif/w=9999',
-                name: 'Seated Leg Press',
+                image: require('../assets/exerciseGifs/UPMOJtRO19dLwt.gif'),
+                name: 'Glute Bridge',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '33',
-                image: 'https://v2.exercisedb.io/image/xAnhp9bAq202T1',
+                image: require('../assets/exerciseGifs/MYSEpsUeKS7IVC.gif'),
                 name: 'Lunge',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '34',
-                image: 'https://v2.exercisedb.io/image/Xp9G4jjxVRmdOE',
+                image: require('../assets/exerciseGifs/Xp9G4jjxVRmdOE.gif'),
                 name: 'Seated Calf Raise',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '35',
-                image: 'https://i.pinimg.com/originals/54/68/d5/5468d5032b585e2e6682f9257d27d568.gif',
-                name: 'Cable Crunch',
+                image: require('../assets/exerciseGifs/5Kjv47lzWdrvKu.gif'),
+                name: 'Sit Ups',
                 sets: 2,
                 reps: 12
             }
@@ -153,43 +153,43 @@ export const templateRoutines = [
         exercises: [
             {
                 id: '40',
-                image: 'https://v2.exercisedb.io/image/OknIesPcV4tHOV',
-                name: 'Chest Press',
+                image: require('../assets/exerciseGifs/OKFqoOqILulcgw.gif'),
+                name: 'Bench Press',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '41',
-                image: 'https://i.pinimg.com/originals/30/be/0e/30be0e19ae0965ba8a6a8435db655dc5.gif',
+                image: require('../assets/exerciseGifs/TjPH0fiA30s1qp.gif'),
                 name: 'Lat Pulldown',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '42',
-                image: 'https://v2.exercisedb.io/image/ysp9KxWQa3thvs',
+                image: require('../assets/exerciseGifs/ysp9KxWQa3thvs.gif'),
                 name: 'Shoulder Press',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '43',
-                image: 'https://v2.exercisedb.io/image/XQWU48Er3vhxCs',
-                name: 'Seated Row',
+                image: require('../assets/exerciseGifs/UrViGuMt2V1OSS.gif'),
+                name: 'Incline Row',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '44',
-                image: 'https://v2.exercisedb.io/image/j25e9sJ06Yqto4',
+                image: require('../assets/exerciseGifs/j25e9sJ06Yqto4.gif'),
                 name: 'Triceps Dip',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '45',
-                image: 'https://homeworkouts.org/wp-content/uploads/anim-dumbbell-bicep-curls.gif',
-                name: 'Bicep Curl',
+                image: require('../assets/exerciseGifs/-aAtiw0IV9S71e.gif'),
+                name: 'Barbell Curl',
                 sets: 3,
                 reps: 12
             }
@@ -202,43 +202,43 @@ export const templateRoutines = [
         exercises: [
             {
                 id: '50',
-                image: 'https://i.pinimg.com/originals/6e/7b/20/6e7b20fe4aba56f1044c1277de42ab6d.gif',
-                name: 'Lying Leg Curl',
+                image: require('../assets/exerciseGifs/oWzzDObNqB4uCB.gif'),
+                name: 'Pull Through',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '51',
-                image: 'https://v2.exercisedb.io/image/dD-B6ZX7lz7Vx6',
-                name: 'Romanian Deadlift',
+                image: require('../assets/exerciseGifs/WtRiR4CbdiMWAo.gif'),
+                name: 'Single Leg Deadlift',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '52',
-                image: 'https://www.bosshunting.com.au/cdn-cgi/imagedelivery/izM8XxyLg9MD6py1ribxJw/www.bosshunting.com.au/2022/09/Leg-Press.gif/w=9999',
-                name: 'Leg Press',
+                image: require('../assets/exerciseGifs/MgNkFPbOyAYfSt.gif'),
+                name: 'Jump Squat',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '53',
-                image: 'https://cdn.shopify.com/s/files/1/0449/8453/3153/files/bulgarian-split-spuat_600x600.gif?v=1694400525',
-                name: 'Bulgarian Split Squat',
+                image: require('../assets/exerciseGifs/EYgovWEKL4FTgU.gif'),
+                name: 'Step ups',
                 sets: 2,
                 reps: 12
             },
             {
                 id: '54',
-                image: 'https://www.inspireusafoundation.org/wp-content/uploads/2021/06/single-leg-standing-calf-raise.gif',
-                name: 'Standing Calf Raise',
+                image: require('../assets/exerciseGifs/Xp9G4jjxVRmdOE.gif'),
+                name: 'Seated Calf Raise',
                 sets: 3,
                 reps: 12
             },
             {
                 id: '55',
-                image: 'https://newlife.com.cy/wp-content/uploads/2019/12/04721301-Hanging-Leg-Raise_Hips_360.gif',
-                name: 'Hanging Leg Raise',
+                image: require('../assets/exerciseGifs/eiPIvz7bbtszkP.gif'),
+                name: 'Cable Crunch',
                 sets: 3,
                 reps: 12
             }

@@ -10,11 +10,14 @@ import {
 } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
 
+
+//Modal which opens when user clicks on the particular exercise template
+
 const TemplateModal = ({ visible, closeModal, routine }) => {
     const [checkboxState, setCheckboxState] = useState({});
 
     useEffect(() => {
-        // Reset checkbox state when the modal is closed
+        // Reset checkbox state when the modal is closed - once user closes the modal, exercise progress/check ticks resets
         if (!visible) {
             setCheckboxState({});
         }
@@ -28,11 +31,11 @@ const TemplateModal = ({ visible, closeModal, routine }) => {
     };
 
     const renderExercises = () => {
-        return routine.exercises.map((exercise) => (
+        return routine.exercises.map((exercise) => ( 
             <View key={exercise.id} style={styles.exerciseContainer}>
                 <Image
                     style={styles.modalImage}
-                    source={{ uri: exercise.image }}
+                    source={exercise.image }
                 />
                 <View style={styles.exerciseDetails}>
                     <Text style={styles.modalExerciseName}>

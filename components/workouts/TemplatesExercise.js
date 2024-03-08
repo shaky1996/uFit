@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { useState } from 'react';
 import TemplateCard from './TemplateCard';
-import { templateRoutines } from '../constants/templateRoutines';
+import { templateRoutines } from '../../constants/templateRoutines';
 
-const TemplatesUserCreated = () => {
+const TemplatesExercise = () => {
     return (
         <View>
             <View style={styles.myTemplates}>
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TemplatesUserCreated;
+export default TemplatesExercise;

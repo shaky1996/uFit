@@ -2,8 +2,11 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { useState } from 'react';
 import ExerciseModal from './ExerciseModal';
 
-const ExerciseCard = ({ item, selectedExercise }) => {
-    const [modalVisible, setModalVisible] = useState(false);
+// each separate card in exercise library
+//also added a modal to show up once user clicks with detailed info about particular exercise
+
+const ExerciseCard = ({ item, selectedExercise }) => { 
+    const [modalVisible, setModalVisible] = useState(false); //modal logic
 
     const openModal = () => {
         setModalVisible(true);
@@ -23,9 +26,9 @@ const ExerciseCard = ({ item, selectedExercise }) => {
                     onPress={openModal}
                 >
                     <Image
-                        source={{
-                            uri: item.gifUrl
-                        }}
+                        source={
+                            item.gifUrl
+                        }
                         resizeMode='contain'
                         style={styles.logoImage}
                     />

@@ -5,6 +5,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { differenceInDays, format } from 'date-fns';
 import TemplateModal from './TemplateModal';
 
+// Template exercises on start workout screen
+
 const TemplateCard = ({ item }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [lastClickedDate, setLastClickedDate] = useState(null);
@@ -31,7 +33,7 @@ const TemplateCard = ({ item }) => {
       }
     }
     return null;
-  };
+  };  // shows when was the last time user opened particular exercise 
 
   return (
     <View>

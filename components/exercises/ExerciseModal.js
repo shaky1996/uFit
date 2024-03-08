@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, Modal, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome6 } from '@expo/vector-icons';
 
+//pop up modal when user clicks on each particular exercise in exercise library
+
 const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, bodyPart, instructions }) => {
     const formattedInstructions = instructions.map((instruction, index) => (
         <Text key={index} style={styles.instructionsText}>
@@ -20,7 +22,7 @@ const ExerciseModal = ({ visible, closeModal, gifUrl, exerciseName, bodyPart, in
           </TouchableOpacity>
         <Text style={styles.modalExerciseName}>{exerciseName.toUpperCase()}</Text>
         <Text style={styles.modalBodyPart}>{bodyPart}</Text>
-          <Image source={{ uri: gifUrl }} style={styles.modalImage} resizeMode='contain' />
+          <Image source={gifUrl} style={styles.modalImage} resizeMode='contain' />
          {formattedInstructions && (
           <View style={styles.instructions}>{formattedInstructions}</View>
         )}

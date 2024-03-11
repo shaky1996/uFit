@@ -65,6 +65,6 @@ The Progress Screen is still under developemnt. Main goal of that screen will be
 ### Video Demonstration of a project
 
 
-[![Video demonstration(https://www.youtube.com/watch?v=_hsuY6WOkBk)](https://www.youtube.com/watch?v=_hsuY6WOkBk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_hsuY6WOkBk?si=aoCaTKSJuFjCOr4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 

@@ -4,7 +4,7 @@
 For a live demo through Expo Snack please click [here](https://snack.expo.dev/@yuldashev1996/ufit---portfolio-project-?platform=ios)
 >expo snack version has limited amount of exercises in exercise library ~ 30
 
-_*project is still under development (3rd page(Progress) to let users track their weight progress planned to be implemented shortly)_
+>_*project is still under development (3rd page(Progress) to let users track their weight progress planned to be implemented shortly)_
 
 ## :white_check_mark:	Overview
 

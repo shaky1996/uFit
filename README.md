@@ -6,11 +6,11 @@ For a live demo through Expo Snack please click [here](https://snack.expo.dev/@y
 
 _*project is still under development (3rd page(Progress) to let users track their weight progress planned to be implemented shortly)_
 
-## Overview
+## :white_check_mark:	Overview
 
 This project is a Fitness App built using React Native, designed to help users track their workouts and access exercise routines conveniently from their mobile devices. With a user-friendly interface, the app provides access to template workouts with detailed information on reps and sets. Additionally, users can explore an exercise library, search for specific exercises, and filter exercises by body parts.
 
-## Features
+## :white_check_mark:	Features
 
 - **Template Workouts:** Users have access to pre-defined workouts with information on the number of reps and sets for each exercise.
 - **Track Progress:** Users can mark exercises as done, allowing them to track their progress and adherence to workout routines.
@@ -21,20 +21,20 @@ This project is a Fitness App built using React Native, designed to help users t
 - **Under Development:** The progress tracking feature on the third page is currently under development, with plans to enhance user experience and provide comprehensive workout analytics.
 
 
-## Technologies Used
+## :white_check_mark:	Technologies Used
 
 - **React Native:** Framework for building cross-platform mobile applications using JavaScript and React.
 - **JavaScript:** Programming language used for implementing app logic and functionality.
 - **Expo:** Toolchain and platform for building and deploying React Native apps.
 
 
-## Motivation
+## :white_check_mark: Motivation
 
 The aim of this project is to provide fitness enthusiasts with a convenient and intuitive mobile application for planning and tracking their workouts. By leveraging React Native, the app delivers a seamless user experience across iOS and Android devices, making it accessible to a wide range of users.
 
-## Project Walkthrough
+## :white_check_mark: Project Walkthrough
 
-### Start Screen
+### :green_circle:	Start Screen
 
 
 
@@ -49,7 +49,7 @@ Moreover, users have the ability to track their engagement with each workout tem
 <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Start%20Page.PNG' width='300'>  <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Workout%20Template%20Modal%20with%20checks.PNG' width='300'>
 
 
-### Exercise Library Screen
+### :green_circle:	Exercise Library Screen
 
 The Exercise Library screen gives users access to a collection of exercises, complete with step-by-step instructions and visual guides for proper execution. Clicking on any exercise opens a modal with a detailed description. Users can also search for exercises or filter them by body part.
 
@@ -58,11 +58,11 @@ The Exercise Library screen gives users access to a collection of exercises, com
 <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Search%20feature.PNG' width='300'>  <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Filter%20feature.PNG' width='300'>
 
 
-### Progress Screen *under development
+### :red_circle:	Progress Screen *under development
 
 The Progress Screen is still under developemnt. Main goal of that screen will be to let users track their weight loss/gain progress on a daily/weekly/monthly basis and be presented in a graph/chart for a better visualization of user's progress
 
-### Video Demonstration of a project
+## :white_check_mark: Video Demonstration of a project
 
 
 https://github.com/shaky1996/uFit/assets/143148015/24fcb0d8-2460-412d-a0f3-b6b4950ccad1

@@ -65,6 +65,6 @@ The Progress Screen is still under developemnt. Main goal of that screen will be
 ### Video Demonstration of a project
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_hsuY6WOkBk?si=aoCaTKSJuFjCOr4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://github.com/shaky1996/uFit/assets/143148015/24fcb0d8-2460-412d-a0f3-b6b4950ccad1
 
 

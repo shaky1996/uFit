@@ -53,10 +53,10 @@ Moreover, users have the ability to track their engagement with each workout tem
 
 The Exercise Library screen gives users access to a collection of exercises, complete with step-by-step instructions and visual guides for proper execution. Clicking on any exercise opens a modal with a detailed description. Users can also search for exercises or filter them by body part.
 
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Exercise%20Library.PNG' width='300'>
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Exercise%20library%20modal.PNG' width='300'>
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Search%20feature.PNG' width='300'>
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Filter%20feature.PNG' width='300'>
+<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Exercise%20Library.PNG' width='300'>  <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Exercise%20library%20modal.PNG' width='300'>
+
+<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Search%20feature.PNG' width='300'>  <img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Filter%20feature.PNG' width='300'>
+
 
 ### Progress Screen *under development
 
@@ -64,4 +64,5 @@ The Progress Screen is still under developemnt. Main goal of that screen will be
 
 ### Video Demonstration of a project
 
-![Video demonstration](https://www.youtube.com/watch?v=_hsuY6WOkBk)
+<video src='https://www.youtube.com/watch?v=_hsuY6WOkBk' width='500'>
+

@@ -40,8 +40,8 @@ Upon opening the app, users are greeted with a screen showcasing a variety of wo
 When a user selects any of the available workout templates (such as Push, Pull, Legs1, Upper, or Legs2), a modal window appears. Within this modal, users can view detailed information about each exercise, including the exercise name, number of reps, and sets. Additionally, a convenient checkbox allows users to mark exercises as completed, facilitating tracking of completed exercise.
 
 Moreover, users have the ability to track their engagement with each workout template, as the app displays the timestamp of their last access to a particular workout routine.
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Start%20Page.PNG' width='150'>
-<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Workout%20Template%20Modal%20with%20checks.PNG' width='150'>
+<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Start%20Page.PNG' width='300'>
+<img src='https://github.com/shaky1996/uFit/blob/master/Readme_assets/Workout%20Template%20Modal%20with%20checks.PNG' width='300'>
 
 ### Exercise Library Screen
 
